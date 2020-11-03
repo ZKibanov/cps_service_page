@@ -1,0 +1,197 @@
+
+.modal-contact__screen {
+    z-index: 9;
+    position: fixed;
+    background-color: rgba(255,255,255,0.9);
+    right:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+
+.modal-contact {
+    z-index: 10;
+    position:fixed;
+    box-sizing: border-box;
+    width:440px;
+    height: 100vh;
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: #7E7E82;
+    border-left:1px solid #D9FFF5;
+    padding:0;
+    background-color: #FFF;
+    right:0;
+    top:0;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+@media (min-width: 120px) and (max-width: 767px) {
+.modal-contact {
+width:100%;
+}
+
+
+.form-contact__title {
+margin-top: 96px;
+}
+
+.modal-contacts-button-close {    
+    position: absolute;
+        top:24px;
+        left:16px;
+}
+}
+
+@media (min-width:768px)  {
+
+.modal-contact {
+position:absolute;
+right:0;
+top:0;
+width:440px;
+}
+
+.modal-contacts-button-close {    
+    position: absolute;
+    top:24px;
+    left:-72px;  
+}
+}
+
+
+.form-contact__title {
+display:block;
+font-family: TT Lakes;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+letter-spacing: -0.6px;
+color: #1B1C21;
+position: relative;
+
+}
+
+.title_positioner {
+margin:32px auto 32px 16px;
+padding:0;
+}
+
+.form-contact__title::before {
+content:"";
+height: 40px;
+width: 3px;
+top: 32px;
+border-radius: 2px;
+position: absolute;
+left: 0;
+top: 0;
+background: #41F6D7;
+border-radius: 2px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+position: absolute;
+left: -18px;
+top:-6px;
+}
+
+.form-contact__title {
+    padding-left: 16px;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+
+
+.form-field {
+box-sizing: border-box;
+width: 346px;
+height:48px;
+margin: 16px 0 0 32px;
+background: #FFFFFF;
+border: 1px solid #EAEAEA;
+border-radius: 8px;
+color: #1B1C21;
+display:block;
+padding-left: 16px;
+padding-top: 10px;
+}
+
+.message-field {
+height: 118px;
+font-family: TT Lakes;
+font-size: 16px;
+line-height: 24px;
+text-align: left;
+display:block;
+
+}
+
+.form-field::placeholder {
+font-family: TT Lakes;
+font-size: 16px;
+line-height: 24px;
+text-align: left;
+}
+
+.form-contact__paragraph {
+width: 350px;
+margin:16px 32px;
+}
+
+.personal-data-link, .confidential-politics-link {
+text-decoration: none;
+color: #FF3E79;
+}
+
+.form-contact__sbm-btn {
+position: absolute;
+left: 250px;
+width:136px;
+height:32px;
+background-image:url("../img/form_submit.svg");
+ padding: 0;
+  border: none;
+ 
+  background-color: transparent;
+}
+
+.modal-contacts-button-close {
+    background-image: url("../img/close.svg");
+    border: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+     position: absolute;
+   
+}
+
+.modal-contact__hidden {
+    position:fixed;
+    top:0;
+    right:0;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.modal-contact__screen_hidden {
+    opacity:0;
+    position:fixed;
+    top:0;
+    transform: translateX(200vw);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+
+
+
+

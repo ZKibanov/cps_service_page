@@ -1,0 +1,47 @@
+$bgColor: #F8F8F8;
+$text: #fff;
+
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Regular.woff2") format("woff2"),
+    url('../fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Bold.woff2") format("woff2"),
+    url('../fonts/TTLakes-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("../fonts/TTLakes-Medium.woff2") format("woff2"),
+    url('../fonts/TTLakes-Medium.woff') forheadermat('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.body {
+  padding: 0;
+  margin: 0;
+  font-family: TT Lakes;
+  background-color: $bgColor;
+  color: $text;
+}
+
+@import './article/article.scss';
+@import './sidebar-menu/sidebar-menu.scss';
+@import './header-menu/header-menu.scss';
+@import './main-content/main-content.scss';
+@import './nav/nav.css';
+@import './brands/swiper_styles.scss';
+@import './modal/contacts.scss';
+@import './modal/modal_call.scss';
+@import './prices/prices.scss';
+@import '../../node_modules/swiper/swiper-bundle.css';
+

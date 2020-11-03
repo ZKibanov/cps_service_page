@@ -1,0 +1,311 @@
+$headerAndMenus:#F2F2F2;
+$footer:#7E7E82;
+$borders:#D9FFF5;
+
+
+* {
+    margin:0;
+    padding:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+.content-block__header-name {
+    font-family: "TT Lakes", "Arial", "Roboto Light",sans-serif ;
+    font-weight: 400;
+    font-size:16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    display:block;
+    margin:0 8px;
+
+}
+
+.content-block__header {
+    display:flex;
+    justify-content: flex-start;
+    color:$footer;
+    background-image: linear-gradient( to right,#F2F2F2, #FFF);
+    width: 100%;
+    border-top: 1px solid $borders;
+    padding:16px;
+
+}
+
+.body {
+    background-color: #F2F2F2;
+    margin:0;
+    padding:0;
+}
+
+.tech__btn-more {
+    font-family: "TT Lakes", "Arial", "Roboto Light",sans-serif ;
+    display: block;
+    cursor: pointer;
+    background-image: url("../img/expand.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: transparent;
+    padding-left: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    transition-duration: 1s;
+    margin: 12px;
+}
+
+.tech__btn-more.btn-more_opened {
+    background-image: url("../img/expand2.svg");
+}
+
+@media (min-width: 120px) and (max-width: 767px) {
+    .btn-more, .btn-more_opened, .brands__btn-more  {
+        display: none;
+    }
+
+    .swiper-container {
+        width:90vw;
+        height:256px;
+        padding: 0;
+        position: relative;
+        margin:0 auto;
+    }
+
+    .swiper-pagination-bullet {
+        margin: 16px 12px;
+        min-height:12px;
+        min-width:12px;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #B5B6BC;
+    }
+    
+    .tech-list__item {
+        display: block;
+        box-sizing: border-box;
+        margin: 0;
+        min-width:220px;
+        max-width:220px;
+    }
+
+    .price-list__item {
+        font-family: "TT Lakes", "Arial", "Roboto Light",sans-serif ;
+        min-width:260px;
+        max-height: 200px;
+        font-size: 14px;
+        display:flex;
+        flex-wrap: wrap;
+       align-content: space-between;
+        align-items:baseline;
+        flex-direction: row;
+        position: relative;
+        padding:16px;
+        border-radius: 6px;
+    } 
+
+    .price-list_container {
+        margin-top: 16px;
+        height: 270px;
+    }
+    
+
+    .price-list__header {
+        display: none;
+    }
+    
+    .price-list__link {
+        margin-top: 16px;
+        position: relative;
+       flex-basis:240px;       
+    }
+
+    .price-list__price {
+        position: relative;
+        flex-basis:240px;        
+    }
+
+    .price-list__time {
+        position: relative;
+        flex-basis:80px;
+    }
+    .price-list__button{
+        position: absolute;
+        right:16px;
+        bottom: 16px;
+    }
+    .price-list__link::before {
+        content:attr(data-title);
+        position: absolute;
+        top: -16px;
+        height: 16px;
+        color: #7E7E82;
+    }
+
+    .price-list__price::before {
+        content:attr(data-title);
+        position: absolute;
+        top: -16px;
+        height: 16px;
+        color: #7E7E82;
+    }
+
+    .price-list__time::before {
+        content:attr(data-title);
+        position: absolute;
+        top: -16px;
+        height: 16px;
+        color: #7E7E82;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .tech-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tech-list_minimized{
+        height: 210px;
+        overflow:hidden;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .tech-list__item {
+        display: block;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+
+    .price-list {
+        display:flex;
+        flex-direction: column;
+        margin:0 24px;
+        width: 95vw;
+        border-radius:6px;
+        max-width: 1100px;
+    }
+    .price-list__item {
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+        position: relative;
+        height:64px;
+        align-items: center;
+    } 
+
+    .price-list__item::before {
+        content:' ';
+        width: 97%;
+        height:1px;    
+        background-color: #EAEAEA;
+        position: absolute;
+        bottom:0;
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    .price-list__link, .price-list__name {
+        width:50%
+    }
+
+    .price-list__price {
+        flex-grow:1;
+    }
+
+    .price-list__time {
+        flex-grow:1;
+            }
+
+    .price-list__button--header {
+        visibility: hidden;
+    }
+
+}
+
+.tech-list__button {
+    background-image: url("../img/go.svg");
+    position: absolute;
+    bottom:16px;
+    right:16px;
+}
+
+.tech-list__button:hover {
+    filter: drop-shadow(6px 3px 4px #7E7E82);
+    transition-duration: 0.5s;
+}
+
+.tech-list__item {
+    width: 240px;
+        display: block;
+        box-sizing: border-box;
+        margin: 0;
+     
+       
+}
+
+.tech-list__link {
+    position: relative;
+    font-family: "TT Lakes", "Arial", "Roboto Light",sans-serif ;
+    font-size:16px;
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    display:flex;
+    padding: 16px;
+    width: 224px;
+    height:160px;
+    background-color: white;
+    margin-left: 32px;
+    margin-top: 32px;
+    color: #1B1C21;
+}
+
+.price-list__item {
+    background-color: white;
+    box-sizing: border-box;
+    padding: 16px;
+    font-family: "TT Lakes", "Arial", "Roboto Light",sans-serif ;
+    font-size:16px;
+    color: #1B1C21;
+}
+
+.price-list__header {
+    color:#7E7E82;
+    background-color:#F2F2F2;
+
+}
+.price-list__button {
+    background-image: url('../img/Rectangle.svg');
+    width:80px;
+    border-radius:16px;
+    align-self: flex-end;
+}
+
+
+
+.btn-more:focus {
+    outline:none;
+    filter: drop-shadow(6px 3px 4px #7E7E82);
+}
+
+.btn:focus {
+    outline:none;
+    filter: drop-shadow(6px 3px 3px #7E7E82);
+}

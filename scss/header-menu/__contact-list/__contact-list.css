@@ -1,0 +1,29 @@
+
+.contact-list {
+    list-style-type:none;
+}
+
+.button {
+    border: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+.button--phone {
+    margin-left:16px;
+    background-image: url("./images/phone.svg");
+ }
+
+.button--chat {
+    margin-left:16px;
+    background-image: url("./images/chat.svg");
+}
+
+.button--contacts {
+    margin-left:16px;
+    background-image: url("./images/path.svg");
+}

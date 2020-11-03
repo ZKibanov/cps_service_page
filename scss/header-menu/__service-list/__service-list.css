@@ -1,0 +1,20 @@
+
+.service-list {
+    list-style-type:none;
+}
+
+.service-list__button--text-visible {
+    text-decoration: none;
+    color: #1B1C21;
+    display: block;
+}
+
+.button--repair-request {
+    background-image: url("./images/repair.svg");
+    margin-left:16px;
+}
+
+.button--status-request {
+    background-image: url("./images/checkstatus-1.svg");
+    margin-left:16px;
+}

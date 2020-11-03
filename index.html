@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack 4 Starter</title>
-  <link href="style.css" rel="stylesheet"></head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
   <body class="body">
   <div class="modal-call__screen modal-call__screen_hidden">
     <div class="modal-call modal-call__hidden">
@@ -14,12 +17,23 @@
         <h1 class="modal__title title">Заказать звонок</h1>
       </div>
       <form class="form-contact" action="" method="post">
-        <input id="" type="tel" class="phone-request-field form-field" placeholder="Телефон">
+        <input
+        aria-label="phone-number"
+          id=""
+          type="tel"
+          class="phone-request-field form-field"
+          placeholder="Телефон"
+        />
         <p class="form-contact__paragraph">
-          Нажимая "отправить",вы даете согласие на<a class="personal-data-link" href="">
-            обработку персональных данных </a>и соглашаетесь с нашей
+          Нажимая "отправить",вы даете согласие на<a
+            class="personal-data-link"
+            href=""
+          >
+            обработку персональных данных </a
+          >и соглашаетесь с нашей
           <a class="confidential-politics-link" href="">
-            политикой конфиденциальности</a>
+            политикой конфиденциальности</a
+          >
         </p>
         <button class="form-call__sbm-btn" type="submit"></button>
       </form>
@@ -32,15 +46,45 @@
         <h1 class="form-contact__title title">Обратная связь</h1>
       </div>
       <form class="form-contact" action="" method="post">
-        <input id="" type="text" class="name-request-field form-field" placeholder="Имя">
-        <input id="" type="tel" class="phone-request-field form-field" placeholder="Телефон">
-        <input id="" type="email" class="email-request-field form-field" placeholder="Электронная почта">
-        <textarea id="" class="message-field form-field" cols="30" rows="10" placeholder="Сообщение"></textarea>
+        <input
+          aria-label="name"
+          id=""
+          type="text"
+          class="name-request-field form-field"
+          placeholder="Имя"
+        />
+        <input
+        aria-label="phone-number"
+          id=""
+          type="tel"
+          class="phone-request-field form-field"
+          placeholder="Телефон"
+        />
+        <input
+        aria-label="email"
+          id=""
+          type="email"
+          class="email-request-field form-field"
+          placeholder="Электронная почта"
+        />
+        <textarea
+        aria-label="your message"
+          id=""
+          class="message-field form-field"
+          cols="30"
+          rows="10"
+          placeholder="Сообщение"
+        ></textarea>
         <p class="form-contact__paragraph">
-          Нажимая "отправить",вы даете согласие на<a class="personal-data-link" href="">
-            обработку персональных данных </a>и соглашаетесь с нашей
+          Нажимая "отправить",вы даете согласие на<a
+            class="personal-data-link"
+            href=""
+          >
+            обработку персональных данных </a
+          >и соглашаетесь с нашей
           <a class="confidential-politics-link" href="">
-            политикой конфиденциальности</a>
+            политикой конфиденциальности</a
+          >
         </p>
         <button class="form-contact__sbm-btn" type="submit"></button>
       </form>
@@ -53,7 +97,14 @@
         <div class="sidebar-menu__header">
           <button class="sidebar-menu-btn button--close button"></button>
           <div class="sidebar-menu__logo">
-            <a href="/" class="sidebar-menu-logo__link"><img class="logo__image" src="./img/Group.svg" width="98" height="52" alt="Logo"></a>
+            <a href="/" class="sidebar-menu-logo__link"
+              ><img
+                class="logo__image"
+                src="./img/Group.svg"
+                width="98"
+                height="52"
+                alt="Logo"
+            /></a>
           </div>
           <button class="menu__header-btn button--search button"></button>
         </div>
@@ -93,11 +144,22 @@
             <button class="button--chat contact-list__button button"></button>
           </li>
           <li class="contact-list__item">
-            <a href="#" class="button--contacts contact-list__button button"></a>
+            <a
+              href="#"
+              class="button--contacts contact-list__button button"
+            ></a>
           </li>
         </ul>
-        <span class="menu__email-address"><a href="mailto: mail@cps.com" class="email-address">mail@cps.com</a></span>
-        <span class="menu__phone-number"><a href="tel:8 800 890 8900" class="phone-number">8 800 890 8900</a></span>
+        <span class="menu__email-address"
+          ><a href="mailto: mail@cps.com" class="email-address"
+            >mail@cps.com</a
+          ></span
+        >
+        <span class="menu__phone-number"
+          ><a href="tel:8 800 890 8900" class="phone-number"
+            >8 800 890 8900</a
+          ></span
+        >
         <ul class="language-panel">
           <li class="language-panel__item chosen">
             <a href="/" class="language-panel__link">RU</a>
@@ -113,7 +175,14 @@
       <header class="header">
         <button class="header__menu-btn button--menu button"></button>
         <div class="logo header__logo">
-          <a class="logo__link"><img class="logo__image" src="./img/Group.svg" width="98" height="52" alt="Logo"></a>
+          <a class="logo__link"
+            ><img
+              class="logo__image"
+              src="./img/Group.svg"
+              width="98"
+              height="52"
+              alt="Logo"
+          /></a>
         </div>
 
         <ul class="header__contact-list contact-list">
@@ -130,10 +199,18 @@
 
         <ul class="header__service-list service-list">
           <li class="service-list__item">
-            <a href="#" class="button--repair-request service-list__button--text-visible button">Оставить заявку</a>
+            <a
+              href="#"
+              class="button--repair-request service-list__button--text-visible button"
+              >Оставить заявку</a
+            >
           </li>
           <li class="service-list__item">
-            <a href="#" class="button--status-request service-list__button--text-visible button">Статус ремонта</a>
+            <a
+              href="#"
+              class="button--status-request service-list__button--text-visible button"
+              >Статус ремонта</a
+            >
           </li>
         </ul>
       </header>
@@ -184,12 +261,18 @@
             <button class="article__btn-more btn-more">Читать далее</button>
           </div>
           <div class="article__image">
-            <img class="article__image-pic" src="./img/IMG_3223.png" height="307" width="532" alt="Наш центр">
+            <img
+              class="article__image-pic"
+              src="./img/IMG_3223.png"
+              height="307"
+              width="532"
+              alt="Наш центр"
+            />
           </div>
         </article>
         <div class="brands-list--container">
-          <div class="brands-list__header">
-            <h2 class="brands-list__header-name">
+          <div class="content-block__header">
+            <h2 class="content-block__header-name">
               Ремонт техники различных брендов
             </h2>
           </div>
@@ -259,20 +342,26 @@
           
           <button class="brands__btn-more btn-more btn">Показать все</button>
         </div>
-        <div class="brands-list__header">
-          <h2 class="brands-list__header-name">Ремонт техники различных брендов</h2>
+        <div class="content-block__header">
+          <h2 class="content-block__header-name">Ремонт техники различных брендов</h2>
         </div>
         <div class="tech-list_minimizer tech-list_minimized">
           <div class="tech-list_container swiper-container">
             <ul class="tech-list swiper-wrapper">
               <li class="tech-list__item swiper-slide">
                 <div class="tech-list__link">
-                  Ремонт ноутбуков<a href="/" class="btn tech-list__button button"></a>
+                  Ремонт ноутбуков<a
+                    href="/"
+                    class="btn tech-list__button button"
+                  ></a>
                 </div>
               </li>
               <li class="tech-list__item swiper-slide">
                 <div class="tech-list__link">
-                  Ремонт планшетов<a href="/" class="btn tech-list__button button"></a>
+                  Ремонт планшетов<a
+                    href="/"
+                    class="btn tech-list__button button"
+                  ></a>
                 </div>
               </li>
               <li class="tech-list__item swiper-slide">
@@ -282,22 +371,34 @@
               </li>
               <li class="tech-list__item swiper-slide">
                 <div class="tech-list__link">
-                  Ремонт стиральных машинок<a href="/" class="btn tech-list__button button"></a>
+                  Ремонт стиральных машинок<a
+                    href="/"
+                    class="btn tech-list__button button"
+                  ></a>
                 </div>
               </li>
               <li class="tech-list__item swiper-slide">
                 <div class="tech-list__link">
-                  Ремонт зарядок<a href="/" class="btn tech-list__button button"></a>
+                  Ремонт зарядок<a
+                    href="/"
+                    class="btn tech-list__button button"
+                  ></a>
                 </div>
               </li>
               <li class="tech-list__item swiper-slide">
                 <div class="tech-list__link">
-                  Ремонт крокодилов<a href="/" class="btn tech-list__button button"></a>
+                  Ремонт крокодилов<a
+                    href="/"
+                    class="btn tech-list__button button"
+                  ></a>
                 </div>
               </li>
               <li class="tech-list__item swiper-slide">
                 <div class="tech-list__link">
-                  Ремонт подорожником<a href="/" class="btn tech-list__button button"></a>
+                  Ремонт подорожником<a
+                    href="/"
+                    class="btn tech-list__button button"
+                  ></a>
                 </div>
               </li>
               <li class="tech-list__item swiper-slide">
@@ -311,8 +412,8 @@
         </div>
     
         <button class="tech__btn-more btn-more btn">Показать все</button>
-        <div class="brands-list__header">
-          <h2 class="brands-list__header-name">Цены на услуги</h2>
+        <div class="content-block__header">
+          <h2 class="content-block__header-name">Цены на услуги</h2>
         </div>
         <div class="price-list_container swiper-container">
           <ul class="price-list swiper-wrapper">
@@ -320,7 +421,10 @@
               <div class="price-list__name">Ремонтные услуги</div>
               <div class="price-list__price">Цена</div>
               <div class="price-list__time">Срок</div>
-              <a href="/" class="btn price-list__button button price-list__button--header"></a>
+              <a
+                href="/"
+                class="btn price-list__button button price-list__button--header"
+              ></a>
             </li>
             <li class="price-list__item swiper-slide">
               <div data-title="Ремонтные услуги" class="price-list__link">
@@ -378,7 +482,7 @@
           </footer>
       </main>
     </div>
-    
+    </div>
    
-  <script type="text/javascript" src="./js/bundle.js"></script></body>
+  </body>
 </html>
