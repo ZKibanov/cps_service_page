@@ -1,2 +1,3 @@
 # cps_service_page
-Тестировая сборка с использованием Webpack
+Тестовая сборка с использованием Webpack
+https://zkibanov.github.io/cps_service_page/
